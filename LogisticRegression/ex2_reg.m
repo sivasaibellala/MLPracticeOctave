@@ -24,21 +24,22 @@ clear ; close all; clc
 %  The first two columns contains the X values and the third column
 %  contains the label (y).
 
-data = load('ex2data2.txt');
-X = data(:, [1, 2]); y = data(:, 3);
+data = load('test1.txt');
+X = data(:, 3:20);
+y = data(:, 21);
 
-plotData(X, y);
+%plotData(X, y); this is commented
 
 % Put some labels
-hold on;
+%hold on;
 
 % Labels and Legend
-xlabel('Microchip Test 1')
-ylabel('Microchip Test 2')
+%xlabel('Microchip Test 1')
+%ylabel('Microchip Test 2')
 
 % Specified in plot order
-legend('y = 1', 'y = 0')
-hold off;
+%legend('y = 1', 'y = 0')
+%hold off;
 
 
 %% =========== Part 1: Regularized Logistic Regression ============
